@@ -10,13 +10,13 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
+theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Pandamon's AI/SW Dungeon", "판다몬의 AI/SW 블로그"
+title                    : "Pandamon's AI/SW Dungeon - 판다몬의 AI/SW 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Pandamon"
@@ -96,9 +96,9 @@ analytics:
 author:
   name             : "Pandamon 판다몬"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A herbivore of AI and SW dev, with majoring Mechanical Engieering. 기계공학에서 출발한 AI/SW 초식동물"
-  location         : "Somewhere, middle of Bamboo Forest. 대나무 숲 어딘가"
-  email            : "ksho1204@gmail.com"
+  bio              : "A herbivore of AI and SW dev, with majoring Mechanical Engieering."
+  location         : "Somewhere in Bamboo Forest."
+  # email            : "ksho1204@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
