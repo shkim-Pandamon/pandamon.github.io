@@ -21,7 +21,3 @@ M1 Mac에 SQL Developer를 이용해 Docker에 붙어보자
     - zsh sqldeveloper.sh
 6. Java 16
     - Uninstall and reinstall
-
-
-
- /Library/Java/JavaVirtualMachines
