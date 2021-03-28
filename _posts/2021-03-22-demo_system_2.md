@@ -17,7 +17,7 @@ last_modified_at: 2020-03-22T12:24:00
 This project uses following HW resources.   
 <small>*본 프로젝트에 사용된 HW 리소스는 다음과 같습니다.*</small>  
 
-> - Oracle Server: Linux (`Ubuntu 20.04`) (Today's Use)
+> - Oracle Server: Linux (`Ubuntu 20.04`) <span style="color:red">(Today's Use)</span>
 > - AI Server: Linux (`Ubuntu 18.04`)
 > - Test Server: macOS (`Big sur`) on M1 chip
 
