@@ -21,7 +21,7 @@ This project uses following HW resources.
 
 > - Oracle Server: Linux (`Ubuntu 20.04`) <span style="color:red">(Today's Use)</span>
 > - AI Server: Linux (`Ubuntu 18.04`)
-> - Test Server: OS X(`Big sur`) on M1 chip
+> - Test Server: macOS (`Big sur`) on M1 chip
 
 ## About Docker and Its Installation
 First, I am gonna use `Docker Engine` for the administration entire SW. What is `Docker Engine`? Since `Docker Engine` has been explained a lot in other blogs/posts, I will simply explain it concentrating on the concepts that is required for this project. the official homepage of `Docker Engine` explaines as;  

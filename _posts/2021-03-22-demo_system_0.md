@@ -52,4 +52,4 @@ This project uses following HW resources.
 
 > - Oracle Server: Linux (`Ubuntu 20.04`)
 > - AI Server: Linux (`Ubuntu 18.04`)
-> - Test Server: OS X(`Big sur`) on M1 chip
+> - Test Server: macOS (`Big sur`) on M1 chip

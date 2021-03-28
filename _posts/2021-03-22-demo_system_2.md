@@ -19,7 +19,7 @@ This project uses following HW resources.
 
 > - Oracle Server: Linux (`Ubuntu 20.04`) (Today's Use)
 > - AI Server: Linux (`Ubuntu 18.04`)
-> - Test Server: OS X(`Big sur`) on M1 chip
+> - Test Server: macOS (`Big sur`) on M1 chip
 
 ## Intro
 As decribed in previous post, I'm gonna use `Docker` container to use `Oracle DB` in this post. Recently it is observed that the usage of `Docker` becomes universal, and clear evidence is that many famous SWs such as `Oracle DB` provide their own Docker images. Thus, we do not need to make docker image ourselves, but we can just download them from [`Docker Hub`](https://hub.docker.com/). First, search `Oracle` at [`Docker Hub`](https://hub.docker.com/), and you can see the results as below.  
