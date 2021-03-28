@@ -1,6 +1,6 @@
 ---
 title: "[KEPCO] Constructing Demo System for AI based Diagnosis_2"
-excerpt: "이건 뭐지?"
+excerpt: "Let's build up a demo server of KEPCO SEDA system"
 
 categories:
     - Blog
@@ -9,15 +9,27 @@ tages:
 last_modified_at: 2020-03-22T12:24:00
 ---
 
-## Intro
-M1 Mac에 SQL Developer를 이용해 Docker에 붙어보자
+## Goal
+> To construct `Oracle` server using `Docker`
+> <small>*Docker를 이용해 Oracle Server를 구축해보자*</small>
 
-1. Oracle SQP Developer Download
-2. JDK 8 install
-3. SQL developer Disclosed!!
-4. Security & Privacy
-5. at Iterm
-    - cd /Applications/SQLDeveloper.app/Contents/resources/sqldeveloper
-    - zsh sqldeveloper.sh
-6. Java 16
-    - Uninstall and reinstall
+## SYSTEM SPECIFICATION
+This project uses following HW resources.   
+<small>*본 프로젝트에 사용된 HW 리소스는 다음과 같습니다.*</small>
+
+> - Oracle Server: Linux (`Ubuntu 20.04`) (Today's Use)
+> - AI Server: Linux (`Ubuntu 18.04`)
+> - Test Server: OS X(`Big sur`) on M1 chip
+
+
+## Oracle Install
+docker run -d -it --name oracle_db -p 1521:1521 store/oracle/database-enterprise:12.2.0.1-slim
+
+## Oracle sqlplus 확인
+docker exec -it oracle_db bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
+
+## Oracle Volume 할당
+docker run -d -it --name oracle_db -p 1521:1521 -v /data/sooho/oracle_volume store/oracle/database-enterprise:12.2.0.1-slim
+
+
+docker exec -it oracle_db bash -c "source /home/oracle/.bashrc; sqlplus sys/Oradoc_db1@ORCLCDB as sysdba"

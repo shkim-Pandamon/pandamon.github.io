@@ -23,7 +23,7 @@ My company is taking charge of the task that develop an AI based health diagnosi
 ## Motivation
 The simplified architecture of SEDA system is as follow. First, the data acquired from each substations is collected at DB server constructed at SEDA. The collected data is variously analyzed, and the results of the anaylsis are described on SEDA web page. In our point of view, we apporach to Oracle to get data, and diagnose the assests with AI algorithm. The results of AI based analysis and diagnosis are decribed on UI web page, and the UI web page is exported to SEDA web page using iframe (Simply, iframe is just a method that copy the other web page and load it.)   
 <small>*SEDA의 간소화된 큰 아키텍처는 아래와 같습니다. 먼저 각 변전소에서 올라오는 데이터는 SEDA에 구축된 DB서버(Oracle)에서 수합됩니다. 수합된 데이터는 다양한 분석 과정을 거치게 되고 이 분석 결과가 SEDA web page에 표현됩니다. 저희는 이 Oracle에 접근해서 변전설비의 여러 데이터를 획득하여 각 설비의 건전성 상태를 진단하고, 진단 및 분석 결과를 UI web page로 구현하여 이를 iframe형식으로 SEDA web pge에 표현합니다. (iframe은 쉽게 표현해 화면을 그대로 옮겨놓는 방식입니다.)*</small>
-<img src="/images/2021-03-22-demo_system_0_fig1.jpg" alt="drawing" width="400"/>
+<img src="/images/2021-03-22-demo_system_0_fig1.png" alt="drawing" width="400"/>
 
 Of course, it is difficult to develop this service ("our server" on diagram) always at the server. The reasone is that KEPCO construct entire network connection as a closed network: it is impossible to connect the network remotely. Since it is cost-unefficient to always visit KEPCO and develop the service in the closed network, it is required to construct a demo system and import it after finishing development.   
 <small>*물론, 이러한 서비스("our server" on diagram)의 구축을 해당 서버 붙어서 직접 작업하는 것은 한계가 있습니다. 특히 눈치채셨겠지만 보안상의 이유로 한국전력공사는 모든 환경을 내부 폐쇄망으로 구성하였기 때문에 원격으로 접근하는 것이 불가능합니다. 따라서 서버의 개발을 매번 폐쇄망에서 작업하는 것은 현실적으로 어렵기 때문에 저희는 데모 시스템을 구축하고, 그 데모시스템을 추후 폐쇄망에 이식해야만 합니다.*</small>
@@ -46,10 +46,10 @@ This project uses following language.
 > - `Python`
 > - `Flask`
 
-## HW SPECIFICATION
+## Systemt Specification
 This project uses following HW resources.   
 <small>*본 프로젝트에 사용된 HW 리소스는 다음과 같습니다.*</small>
 
 > - Oracle Server: Linux (`Ubuntu 20.04`)
 > - AI Server: Linux (`Ubuntu 18.04`)
-> - Developer PC: OS X(`Big sur`) on M1 chip
+> - Test Server: OS X(`Big sur`) on M1 chip
