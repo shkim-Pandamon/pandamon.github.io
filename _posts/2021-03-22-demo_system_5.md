@@ -1,6 +1,6 @@
 ---
 title: "[KEPCO] Constructing Demo System for AI based Diagnosis_5"
-excerpt: "이건 뭐지?"
+excerpt: "Let's build up a demo server of KEPCO SEDA system"
 
 categories:
     - Blog
