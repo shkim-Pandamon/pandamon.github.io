@@ -6,7 +6,7 @@ categories:
     - Blog
 tages:
     - Blogs
-last_modified_at: 2020-03-22T12:24:00
+last_modified_at: 2020-03-26T12:24:00
 ---
 
 ## Goal
@@ -82,7 +82,8 @@ If you see result as below, your `Oracle` works well.
 The ID and PW of initial account setup are `sys` and `Oradoc_db1` respectively, and SID of DB is `ORCLCDB`. When you want to get out from `sqlplus` or `container bash`, just use a command `exit`  
 <small>*기본적으로 세팅되어 있는 dba권한의 ID와 PW는 각각 'sys'와 'Oradoc_db1'입니다. 또 DB의 SID는 ORCLCDB로 설정되어 있습니다. 'sqlplus' 및 'container bash'에서 나올때는 'exit' 명령어를 사용해서 나올 수 있습니다.*</small>
 
-<small>*마지막으로 볼륨을 설정해봅시다. 오라클 컨테이너는 DB 특성상 많은 데이터를 저장하게 되는데, 따로 볼륨을 지정하지 않을 경우 컨테이너에 오류가 발생하거나 컨테이너 동작이 멈출경우 데이터도 함께 손실될 위험이 있다. 이를 방지하기 위해 컨테이너와 분리된 로컬 디렉토리를 볼륨으로 지정하여 데이터를 보존할 수 있는데, 단지 컨테이너 생성시 로컬의 볼륨 디렉토리를 지정해주기만 하면 된다.*</small>
+As a last, you can set up the volume for the `Oracle Container`. Because of the characteristic of DB, `Oracle Contianer` could store important and huge amount of data. If a volume is not allocated to the `Oracle Container`, the data could be lost or damaged when problem occurs in the operation of `Oracle Container`. To prevent is we can allocate the local directory as a volume to `Oracle Container`, and it could be simply done by `-v` option when create the container.   
+<small>*마지막으로 볼륨을 설정해봅시다. 오라클 컨테이너는 DB 특성상 많은 데이터를 저장하게 되는데, 따로 볼륨을 지정하지 않을 경우 컨테이너에 오류가 발생하거나 컨테이너 동작이 멈출경우 데이터도 함께 손실될 위험이 있습니다. 이를 방지하기 위해 컨테이너와 분리된 로컬 디렉토리를 볼륨으로 지정하여 데이터를 보존할 수 있는데, 단지 컨테이너 생성시 로컬의 볼륨 디렉토리를 지정해주기만 하면 됩니다.*</small>
 
 ``` bash
 # use '-v' option

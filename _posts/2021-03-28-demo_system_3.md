@@ -6,7 +6,7 @@ categories:
     - Blog
 tages:
     - Blogs
-last_modified_at: 2020-03-22T12:24:00
+last_modified_at: 2020-03-28T12:24:00
 ---
 
 ## Goal
@@ -78,3 +78,10 @@ zsh sqldeveloper.sh
 ```
 <img src="/images/2021-03-22-demo_system_3_fig5.png" alt="drawing" width="400"/>
 <figcaption>Finally, we can use SQL Developer!!</figcaption>
+
+### Connect SQL Developer to DB
+As a last, Let's access to `Oracle DB` on `Oracle Server` using `SQL Developer`. As explained in last post, the default set up for ID, PW and SID is `sys`, `Oradoc_db1`, and `ORCLCDB`, respectively. First, when you open `SQL Developer`, press the green cross icon on upperleft to add DB. When the page pop up, type the name of DB on `Name`. Then, on `User Info` tab, put `sys` and `Oradoc_db1` to `Username` and `Password`, and change the `Role` as `SYSDBA`. Finally, put your IP address of Oracle Server on `Hostname`, the port on `Ports`, and `ORCLCDB` on `SID`.  
+<small>*마지막으로 이제 우리가 Oracle Server에 만들어두었던 'Oracle DB'에 접속해봅니다. 이전 포스트에서 설명한 것처럼 기본적으로 세팅되어 있는 dba권한의 ID와 PW는 각각 'sys'와 'Oradoc_db1'입니다. 또 DB의 SID는 ORCLCDB로 설정되어 있습니다. 먼저 SQL Developer가 열리면 왼쪽 상단의 초록색 플러스 아이콘을 클릭하여 DB를 추가합니다. 팝업 창이 열리면 'Name'에 원하는 DB의 이름을 넣어줍니다. 다음으로 'User Info'탭에서 Username과 Password는 각각 디폴트로 설정되어있던 'sys'와 'Oradoc_db1'을 입력하고 Role을 'SYSDBA'로 변경해줍니다. 마지막으로 'details' 탭에서 'Hostname'에는 Oracle Server의 IP주소를, 'Ports'에는 지정한 포트를, 그리고 'SID'에는 기본값인 'ORCLCDB'를 설정하면 됩니다.*</small>
+
+<img src="/images/2021-03-22-demo_system_3_fig6.png" alt="drawing" width="600"/>
+<figcaption>Connect to Oracle Server</figcaption>
