@@ -56,7 +56,7 @@ You will encounter a message like above, then just "allow apps downloaded from ~
 # add below to product.conf
 SetJavaHome /path/jdk~
 ```
-<img src="/images/2021-03-22-demo_system_3_fig4.png" alt="drawing" width="300"/>
+<img src="/images/2021-03-22-demo_system_3_fig4.png" alt="drawing" width="600"/>
 <figcaption>Set the path of JDK</figcaption>
 
 The most confident way is to remove other Javas that weren't used. In my case, I just remove entire Javas and reinstall `JDK 8`. It is not recommended, but pretty sure.   
