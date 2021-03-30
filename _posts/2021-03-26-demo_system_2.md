@@ -53,7 +53,7 @@ docker run -d -it --name oracle_db -p 1521:1521 store/oracle/database-enterprise
 After installation you can check the presence of the image and the container by commands `docker images -a` and `docker ps -a`. If the status of container show as `healthy`, then the installation was done successfully.  
 <small>*설치가 끝나면 'docker images -a'와 'docker ps -a'를 통해 각각 이미지와 컨테이너의 존재여부를 확인할 수 있습니다. 이때 컨테이너의 상태가 아래와 같이 'healthy'일 경우 설치가 잘 완료되었다고 판단할 수 있습니다.*</small>
 
-"그림 넣어야합니다."
+<img src="/images/2021-03-22-demo_system_2_fig3.png" alt="drawing" width="600"/>
 
 Now, Let's configure if `Oracle` work well using `sqlplus`. Put command as below and see how the result would come.
 <small>*이제 'sqlplus'를 이용해 오라클이 잘 돌아가고 있는지 확인해보도록 하겠습니다. 먼저 아래와 같이 입력했을때 어떤 결과가 오는지 확인해봐야합니다.*</small>
@@ -77,7 +77,7 @@ docker exec -it oracle_db bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
 If you see result as below, your `Oracle` works well.   
 <small>*만약 아래와 같이 나온다면 성공입니다.*</small>
 
-"그림 넣어야 합니다."
+<img src="/images/2021-03-22-demo_system_2_fig4.png" alt="drawing" width="600"/>
 
 The ID and PW of initial account setup are `sys` and `Oradoc_db1` respectively, and SID of DB is `ORCLCDB`. When you want to get out from `sqlplus` or `container bash`, just use a command `exit`  
 <small>*기본적으로 세팅되어 있는 dba권한의 ID와 PW는 각각 'sys'와 'Oradoc_db1'입니다. 또 DB의 SID는 ORCLCDB로 설정되어 있습니다. 'sqlplus' 및 'container bash'에서 나올때는 'exit' 명령어를 사용해서 나올 수 있습니다.*</small>

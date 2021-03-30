@@ -96,4 +96,5 @@ print(result)
 
 설명해드리겠습니다.
 
-"print"결과 화면
+<img src="/images/2021-03-22-demo_system_5_fig2.png" alt="drawing" width="300"/>
+<figcaption>Test results of cx_Oracle</figcaption>
