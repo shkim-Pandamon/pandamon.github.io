@@ -80,3 +80,37 @@ GRANT CONNECT,RESOURCE,DBA TO "<name>";
 GRANT CREATE TABLE, CREATE VIEW TO "<name>";
 GRANT CONNECT,DBA TO "<name>";
 ```
+
+## Additional) Korea Language on Oracle
+In my case, I use some data with Korean language and need to change additional language setting. first, update language setting as follow.   
+<small>*저의 경우 일부 한글 데이터를 사용해야 하기때문에 추가적인 언어설정이 필요합니다. 먼저 아래와 같이 SQL에 언어설정을 변경해줍니다.*</small>
+
+```sql
+update sys.props$ set value$='AMERICAN' where name='NLS_LANGUAGE';
+update sys.props$ set value$='AMERICA' where name='NLS_TERRITORY';
+update sys.props$ set value$='KO16KSC5601' where name='NLS_CHARACTERSET';
+update sys.props$ set value$='AL16UTF16' where name='NLS_NCHAR_CHARACTERSET';
+```
+
+Then, restart `Oracle`. Shut down the `listener` first.   
+<small>*다음으로 오라클을 재부팅합니다. 먼저 리스너를 멈춥니다.*</small>
+
+```bash
+lsnrctl stop
+sqlplus /nolog
+```
+
+Reboot `Oracle DB`.   
+<small>*Oracle을 재시작 합니다.*</small>
+
+```sql
+connect /as sysdba
+shutdown immediate;
+startup;
+```
+
+As a lst, restart the `listener`.   
+<small>*마지막으로 리스너를 다시 시작해줍니다.*</small>
+```bash
+lsnrctl start
+```
