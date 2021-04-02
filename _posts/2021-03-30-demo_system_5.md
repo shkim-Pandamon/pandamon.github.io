@@ -19,7 +19,7 @@ This project uses following HW resources.
 
 > - Oracle Server: Linux (`Ubuntu 20.04`)
 > - AI Server: Linux (`Ubuntu 18.04`)  <span style="color:red">(Today's Use)</span>
-> - Test Server: macOS (`Big sur`) on M1 chip
+> - Client Server: macOS (`Big sur`) on M1 chip
 
 ## Intro
 [`cx_Oracle`](https://oracle.github.io/python-cx_Oracle/) is a `Python` extention module that enabes access to `Oracle DB`. In my case, I predefine a string of `Oracle Command`, execute it using `cx_Oracle`, and get the data as python `dictionary` type. In this post I will explain the process step by step.  
@@ -94,7 +94,7 @@ conn.close()
 print(result)
 ```
 
-설명해드리겠습니다.
+"설명 필요할듯"
 
 <img src="/images/2021-03-22-demo_system_5_fig2.png" alt="drawing" width="300"/>
 <figcaption>Test results of cx_Oracle</figcaption>

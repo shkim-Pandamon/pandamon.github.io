@@ -19,7 +19,7 @@ This project uses following HW resources.
 
 > - Oracle Server: Linux (`Ubuntu 20.04`)  <span style="color:red">(Today's Use)</span>
 > - AI Server: Linux (`Ubuntu 18.04`)
-> - Test Server: macOS (`Big sur`) on M1 chip
+> - Client Server: macOS (`Big sur`) on M1 chip
 
 ## Intro
 In usual, a `tablespace` and an `account` would be allocated to each project when use `Oracle DB`. The user can access to the data with his account and the allocated tablespace. In this post, I am gonna make a new tablespace and allocate it to new user account.  
@@ -114,3 +114,43 @@ As a lst, restart the `listener`.
 ```bash
 lsnrctl start
 ```
+
+
+<!-- create tablespace "SIPSDB"
+datafile '/home/oracle/oradata/ORCLCDB/seda_db.dbf' size 10240M;
+
+alter session set "_ORACLE_SCRIPT"=TRUE;
+
+CREATE USER "SEDA_DEV" IDENTIFIED BY "hmi@seda1234!!"  
+DEFAULT TABLESPACE "SIPSDB"
+TEMPORARY TABLESPACE "TEMP";
+
+GRANT CONNECT,RESOURCE,DBA TO "SEDA_DEV";
+GRANT CREATE TABLE, CREATE VIEW TO "SEDA_DEV";
+GRANT CONNECT,DBA TO "SEDA_DEV"; -->
+
+<!-- update sys.props$ set value$='AMERICAN' where name='NLS_LANGUAGE';
+update sys.props$ set value$='AMERICA' where name='NLS_TERRITORY';
+update sys.props$ set value$='KOREAN_KOREA.KO16KSC5601' where name='NLS_CHARACTERSET';
+update sys.props$ set value$='AL16UTF16' where name='NLS_NCHAR_CHARACTERSET'; -->
+
+<!-- update sys.props$ set value$='AMERICAN' where name='NLS_LANGUAGE';
+update sys.props$ set value$='AMERICA' where name='NLS_TERRITORY';
+update sys.props$ set value$='KO16KSC5601' where name='NLS_CHARACTERSET';
+update sys.props$ set value$='AL16UTF16' where name='NLS_NCHAR_CHARACTERSET'; -->
+
+<!-- update sys.props$ set value$='WE8DEC' where name='NLS_CHARACTERSET';
+update sys.props$ set value$='AL16UTF16' where name='NLS_NCHAR_CHARACTERSET';
+
+SELECT * FROM SYS.PROPS$ WHERE NAME = 'NLS_CHARACTERSET';
+SELECT * FROM NLS_DATABASE_PARAMETERS; -->
+
+
+<!-- An error was encountered performing the requested operation:
+
+ORA-06552: PL/SQL: Compilation unit analysis terminated
+ORA-06553: PLS-553: character set name is not recognized
+06552. 00000 -  "PL/SQL: %s"
+*Cause:    
+*Action:
+Vendor code 6552 -->

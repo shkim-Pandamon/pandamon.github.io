@@ -19,10 +19,10 @@ This project uses following HW resources.
 
 > - Oracle Server: Linux (`Ubuntu 20.04`)
 > - AI Server: Linux (`Ubuntu 18.04`)
-> - Test Server: macOS (`Big sur`) on M1 chip  <span style="color:red">(Today's Use)</span>
+> - Client Server: macOS (`Big sur`) on M1 chip  <span style="color:red">(Today's Use)</span>
 
 ## Intro
-Oracle offers `SQL Plus` that excellent tool for DB administration, but most of users prefer handling SW based on GUI form. Especially, the general users, who are not the developer, could face a barrier to entry on handling data only with command based `SQL Plus`. For this issue, Oracle offers a S/W whose name is `SQL Developer` based on GUI. As with `SQL Plus`, `SQL Developer` enables to control Oracle DB on remote server. This post will explain how to set up `SQL Developer` on the test server which operated under `macOS Big Sur` with Apple silicon `M1 chip`.  
+Oracle offers `SQL Plus` that excellent tool for DB administration, but most of users prefer handling SW based on GUI form. Especially, the general users, who are not the developer, could face a barrier to entry on handling data only with command based `SQL Plus`. For this issue, Oracle offers a S/W whose name is `SQL Developer` based on GUI. As with `SQL Plus`, `SQL Developer` enables to control Oracle DB on remote server. This post will explain how to set up `SQL Developer` on the Client Server which operated under `macOS Big Sur` with Apple silicon `M1 chip`.  
 <small>*오라클은 DB 관리를 위해 SQL Plus라는 훌륭한툴을 제공해주지만, 대부분의 유저들은 GUI형태로 구현된 SW를 다루는 것을 선호하는 것이 현실입니다. 특히 개발자가 아닌 일반사용자들의 경우 Command 기반의 SQL plus만으로 데이터를 다루기에는 분명 진입장벽이 존재합니다. 이를 위해 오라클에서는 SQL Developer라는 훌륭한 GUI 기반의 S/W를 제공합니다. SQL Developer는 SQL Plus와 마찬가지로 원격으로 우리가 원하는 서버의 오라클 DB를 제어할 수 있기 때문에 한번 구축해놓으면 오라클 서버에서 직접 작업하는 불편함을 생략할 수 있지요. 오늘 포스트에서는 테스트 환경인 macOS Big Sur에서 SQL Developer를 이용해 오라클 DB를 사용해보도록 하겠습니다.*</small>
 
 <img src="/images/2021-03-22-demo_system_3_fig1.png" alt="drawing" width="600"/>
