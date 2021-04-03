@@ -10,7 +10,7 @@ last_modified_at: 2020-03-22T12:24:00
 ---
 
 ## Goal
-> To constct a demo test environment of KEPCO(Korea Electric Power Corporation) SEDA(Substation Equipment Diagnostic & Analysis) system using Oracle, Docker, Python, Flask, Gunicorn, and Nginx(HTML)  
+> To construct a demo test environment of KEPCO(Korea Electric Power Corporation) SEDA(Substation Equipment Diagnostic & Analysis) system using Oracle, Docker, Python, Flask, Gunicorn, and Nginx(HTML)  
 > <small>*Oracle, Docker, Python, Flask, Gunicorn and Nginx(HTML)를 활용한 한국전력공사의 송변전 예방진단시스템 데모 테스트 환경 구축*</small>
 
 ## Background
