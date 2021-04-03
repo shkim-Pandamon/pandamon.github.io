@@ -1,5 +1,5 @@
 ---
-title: "[KEPCO] Constructing Demo System for AI based Diagnosis_5"
+title: "[KEPCO] Constructing Demo System for AI based Diagnosis_6"
 excerpt: "Let's build up a demo server of KEPCO SEDA system"
 
 categories:
