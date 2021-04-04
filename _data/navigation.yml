@@ -1,6 +1,6 @@
 # main links
 main:
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: https://shkim-Pandamon.github.io/projects/
   - title: "Projects"
-    url: https://shkim-Pandamon.github.io/project/projects/
+    url: https://shkim-Pandamon.github.io/projects/
