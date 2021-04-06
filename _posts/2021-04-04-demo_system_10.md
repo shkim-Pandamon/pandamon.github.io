@@ -3,9 +3,9 @@ title: "[KEPCO] Constructing Demo System for AI based Diagnosis_7"
 excerpt: "Let's build up a demo server of KEPCO SEDA system"
 
 categories:
-    - Blog
+    - projects
 tages:
-    - Blogs
+    - projects
 last_modified_at: 2020-04-03T12:24:00
 ---
 

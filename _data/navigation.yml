@@ -1,6 +1,8 @@
 # main links
 main:
   - title: "About"
-    url: https://shkim-Pandamon.github.io/about/
+    url: /about/
   - title: "Projects"
-    url: https://shkim-Pandamon.github.io/projects/
+    url: /projects/
+  - title: "Tech_Reviews"
+    url: /reviews/
